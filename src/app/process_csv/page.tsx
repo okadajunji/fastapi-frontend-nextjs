@@ -58,7 +58,7 @@ const IndexPage: React.FC = () => {
 
       {rawCsvData && (
         <>
-          <Box sx={{ height: 350, width: "100%" }}>
+          <Box component="div" sx={{ height: 350, width: "100%" }}>
             <DataGrid
               rows={rawCsvData
                 .slice(1)
@@ -81,7 +81,7 @@ const IndexPage: React.FC = () => {
       )}
 
       {processedCsvData && (
-        <Box sx={{ height: 350, width: "100%" }}>
+        <Box component="div"  sx={{ height: 350, width: "100%" }}>
           <DataGrid
             rows={processedCsvData
               .slice(1)
